@@ -1,0 +1,11 @@
+text,label
+"Dear customer, your account has been suspended. Click http://verify-bank.example/login to reactivate immediately.",1
+"Hi team, attached are the Q3 numbers. Let me know if you spot anything off. Thanks, Mike",0
+"URGENT: Wire transfer required. Reply with your routing number to avoid late fee.",1
+"Reminder: standup at 10:30 tomorrow. Calendar invite went out yesterday.",0
+"Re: invoice #4421 — please update the payment instructions to the account in this email.",1
+"Hello! Following up on the design review feedback. I incorporated everything from the doc.",0
+"Your package delivery failed. Confirm your address at http://delivery-update.example/?id=482",1
+"Lunch and learn next Wednesday — topic is observability with OpenTelemetry. RSVP if you're in.",0
+"Security alert: unusual sign-in from 192.0.2.5. Click here to secure your account: http://secure-365.example",1
+"PR review request: please take a look when you have a few minutes. No rush.",0
