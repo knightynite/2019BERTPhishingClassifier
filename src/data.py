@@ -39,3 +39,23 @@ class EmailDataset(Dataset):
         }
 
 
+def stratified_split(labels, val_frac=0.1, seed=0):
+    """Return (train_indices, val_indices) preserving label proportions.
+
+    Useful when classes are imbalanced; a random split can bury a small class
+    entirely in the train set.
+    """
+    import random
+    rng = random.Random(seed)
+    by_label = defaultdict(list)
+    for i, y in enumerate(labels):
+        by_label[int(y)].append(i)
+    train_idx, val_idx = [], []
+    for label, idxs in by_label.items():
+        rng.shuffle(idxs)
+        n_val = max(1, int(round(len(idxs) * val_frac)))
+        val_idx.extend(idxs[:n_val])
+        train_idx.extend(idxs[n_val:])
+    rng.shuffle(train_idx)
+    rng.shuffle(val_idx)
+    return train_idx, val_idx
