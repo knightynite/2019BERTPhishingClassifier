@@ -14,3 +14,11 @@ Fine-tune BERT-base-uncased for binary classification of phishing vs. benign ema
 
 - `src/bert_classifier.py` — BertForSequenceClassification fine-tune loop
 - `src/data.py` — dataset loader (placeholder — drop your CSV at `data/emails.csv`)
+
+
+## Run
+
+```bash
+pip install -r requirements.txt
+python src/bert_classifier.py --train data/emails.csv --epochs 3
+```
