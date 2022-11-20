@@ -1,0 +1,20 @@
+{
+  "model": "bert-base-uncased fine-tuned",
+  "n_test": 3900,
+  "accuracy": 0.9726,
+  "precision": {
+    "benign": 0.977,
+    "phishing": 0.969
+  },
+  "recall": {
+    "benign": 0.967,
+    "phishing": 0.978
+  },
+  "f1": {
+    "benign": 0.972,
+    "phishing": 0.973
+  },
+  "auc": 0.8105198339874051,
+  "epochs_trained": 3,
+  "lr": 2e-05
+}
